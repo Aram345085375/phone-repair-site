@@ -21,7 +21,7 @@
       position: relative;
       background: #7e8588; 
       color: #fff; 
-      padding: 70px 20px 40px; /* Увеличена верхняя часть шапки */
+      padding: 70px 20px 40px;
       text-align: center; 
     }
     
@@ -29,14 +29,14 @@
     .header-badge {
       position: absolute;
       top: 20px;
-      right: 20px; /* Прижата к правому краю */
-      background: rgba(230, 57, 70, 0.75); /* Красно-прозрачный фон */
-      backdrop-filter: blur(5px); /* Эффект размытия (как в iOS) */
+      right: 20px;
+      background: rgba(230, 57, 70, 0.75);
+      backdrop-filter: blur(5px);
       color: #ffffff;
       padding: 8px 16px;
       border-radius: 20px;
       font-size: 13px;
-      border: 1px solid rgba(255, 255, 255, 0.3); /* Светлая рамка для контраста */
+      border: 1px solid rgba(255, 255, 255, 0.3);
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       font-weight: bold;
     }
@@ -82,9 +82,7 @@
     .price-list li:last-child { border-bottom: none; }
     .price { font-weight: bold; color: #e63946; }
     
-    /* ========================================= */
     /* БЛОК "УСЛУГИ И ЦЕНЫ" С ВАШЕЙ КАРТИНКОЙ */
-    /* ========================================= */
     .services-section {
       background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('iphone-bg.jpg');
       background-size: cover;
@@ -105,7 +103,7 @@
     }
     
     .services-section .price {
-      color: #ff453a; /* Красный цвет Apple */
+      color: #ff453a;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
     }
     
@@ -113,7 +111,6 @@
       color: #d1d5db !important;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
     }
-    /* ========================================= */
 
     /* Контейнер для кнопок связи */
     .button-group {
@@ -139,7 +136,6 @@
     }
     .btn:hover { background: #c1121f; }
     
-    /* Цвета кнопок мессенджеров */
     .btn.whatsapp { background: #25D366; } 
     .btn.whatsapp:hover { background: #128C7E; }
     .btn.telegram { background: #0088cc; } 
@@ -154,14 +150,10 @@
 <body>
 
 <header>
-  <!-- Плашка перенесена вправо и стала красной -->
   <div class="header-badge">Работаем ежедневно 10:00–20:00</div>
-
   <div class="logo">Mm</div>
-  
   <div class="small-title">Мастерская телефонов</div>
   <div class="classic">«ремонт телефонов»</div>
-  
   <p>Быстрый ремонт. Честные цены. Гарантия.</p>
 </header>
 
@@ -188,9 +180,15 @@
 
   <section>
     <h2>Где мы находимся</h2>
-    <p>
-      <strong>Адрес:</strong> 357432, Ставропольский край, г. Железноводск, п. Иноземцево, ул. Родниковая<br>
-      <span style="color:#666;font-size:14px;">📍 Угловое здание на пересечении с ул. Колхозная</span>
+    <p style="line-height: 1.6;">
+      <strong>Адрес:</strong> 357432, Ставропольский край, г. Железноводск, п. Иноземцево, ул. Колхозная (пересечение с ул. Родниковая)<br>
+      
+      <!-- Красивое описание локации -->
+      <span style="color:#444;font-size:15px; display:block; margin-top:10px;">
+        <i class="fa-solid fa-location-dot" style="color:#e63946; margin-right:5px;"></i>
+        Находимся на площадке супермаркета <strong>«Магнит»</strong>.<br>
+        <span style="color:#666; font-size:14px; margin-left: 22px;">📍 Правая сторона, новый ряд павильонов.</span>
+      </span>
     </p>
     <p><strong>Телефон:</strong> <a href="tel:+79614955515">+7 (961) 495-55-15</a></p>
     <p><strong>Часы работы:</strong> Пн–Вс, 10:00–20:00</p>
