@@ -16,27 +16,29 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #222; }
     
-    /* Шапка сайта в цвете Nardo Grey */
+    /* Шапка сайта в цвете Nardo Grey (увеличена высота) */
     header { 
-      position: relative; /* Важно для позиционирования плашки */
+      position: relative;
       background: #7e8588; 
       color: #fff; 
-      padding: 40px 20px 30px; 
+      padding: 70px 20px 40px; /* Увеличена верхняя часть шапки */
       text-align: center; 
     }
     
-    /* Плашка режима работы в левом верхнем углу сайта */
+    /* Красно-прозрачная плашка в правом верхнем углу */
     .header-badge {
       position: absolute;
-      top: 15px;
-      left: 15px;
-      background: rgba(0, 0, 0, 0.35); /* Полупрозрачный темный фон */
+      top: 20px;
+      right: 20px; /* Прижата к правому краю */
+      background: rgba(230, 57, 70, 0.75); /* Красно-прозрачный фон */
+      backdrop-filter: blur(5px); /* Эффект размытия (как в iOS) */
       color: #ffffff;
-      padding: 6px 14px;
+      padding: 8px 16px;
       border-radius: 20px;
       font-size: 13px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Светлая рамка для контраста */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      font-weight: bold;
     }
 
     /* Стили для логотипа Mm */
@@ -152,7 +154,7 @@
 <body>
 
 <header>
-  <!-- Плашка перенесена сюда -->
+  <!-- Плашка перенесена вправо и стала красной -->
   <div class="header-badge">Работаем ежедневно 10:00–20:00</div>
 
   <div class="logo">Mm</div>
@@ -166,7 +168,6 @@
 <div class="container">
 
   <section class="services-section">
-    <!-- Плашка отсюда убрана -->
     <h2>Услуги и цены</h2>
     <ul class="price-list">
       <li><span>Замена экрана (iPhone / Android)</span><span class="price">от 2 500 ₽</span></li>
